@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadaća 2</title>
+</head>
+<body>
+    <h1>🎶OLIVER DRAGOJEVIĆ🎶</h1>
+    <p>Dobrodošli na stranicu posvećenu neponovljivom glasu hrvatske glazbene scene.</p>
+    <h2>Uz slušanje valova prisjetimo se Olivera Dragojevića</h2>
+    <audio controls>
+      <source src="../audio video/ocean-waves-250310.mp3" type="audio/mp3">
+      Vaš preglednik ne podržava audio element.
+    </audio>
+    <br>  
+    <img src="https://cmc.com.hr/wp-content/uploads/2021/07/crni-oliver.jpg" alt="oliver dragojević" width="400" height="300">
+    <br>
+    <h2>Najpoznatiji albumi</h2>
+      <table border="">
+      <tr>
+       <th rowspan="2">Godina</th>
+        <th colspan="2">Album</th>
+        <th rowspan="2">Najpoznatija pjesma</th>
+      </tr>
+      <tr>
+        <th>Naslov</th>
+        <th>Žanr</th>
+      </tr>
+      <tr>
+        <td>1975.</td>
+        <td> <em>Ljubavna pjesma</em></td>
+        <td>Pop</td>
+        <td>Pismo moja</td>
+      </tr>
+      <tr>
+        <td>1988.</td>
+        <td><em>Oliver u Karapetrovom kazalištu</em></td>
+        <td>Pop</td>
+        <td>Cesarica</td>
+      </tr>
+      <tr>
+        <td>1994.</td>
+        <td><em>Vrime</em></td>
+        <td>Pop</td>
+        <td>Vjeruj u ljubav</td>
+      </tr>
+      <tr>
+        <td>2005.</td>
+        <td><em>Trag u beskraju</em></td>
+        <td>Pop / Balada</td>
+        <td>Trag u beskraju</td>
+      </tr>
+    </table>
+    <br>
+    <h2>Pogledajte Oliverov live koncert</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AL0o57Dj4Kk?si=4JpQZHPAiizGA2Jr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br><br>
+    <h2>Pridruži se Oliver Fan Klubu</h2>
+    <form action="#" method="post">
+      <label for="Ime">Ime:</label>
+      <input type="text" id="Ime" required>
+        <br><br>
+      <label for="Prezime">Prezime:</label>
+      <input type="text" id="Prezime" required>
+        <br><br>
+      <label for="pass">Lozinka:</label>
+      <input type="password" name="pass" id="pass" required placeholder="Upiši lozinku">
+        <br><br>
+      <label for="date">Datum rođenja:</label>
+      <input type="date" name="date" id="date">
+        <br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email" placeholder="primjer@email.com">
+        <br><br>
+      <p>Omiljene pjesme Olivera:</p>
+      <input type="checkbox" id="Cesarica" name="Cesarica">
+      <label for="Cesarica">Cesarica</label>
+      <input type="checkbox" id="Trag u beskraju" name="Trag u beskraju">
+      <label for="Trag u beskraju">Trag u beskraju</label>
+      <input type="checkbox" id="Vjeruj u ljubav" name="Vjeruj u ljubav">
+      <label for="Vjeruj u ljubav">Vjeruj u ljubav</label>
+      <br>
+      <input type="checkbox" id="Pismo moja" name="Pismo moja">
+      <label for="Pismo moja">Pismo moja</label>
+      <input type="checkbox" id="Kad mi dođeš ti" name="Kad mi dođeš ti">
+      <label for="Kad mi dođeš ti">Kad mi dođeš ti</label>
+      <input type="checkbox" id="Što to biješe ljubav" name="Što to biješe ljubav">
+      <label for="Što to biješe ljubav">Što to biješe ljubav</label>
+      <br><br>
+      <p>Odaberite ulogu:</p>
+      <input type="radio" id="admin" name="role" value="admin">
+      <label for="admin">Admin</label>
+      <br>
+      <input type="radio" id="guest" name="role" value="guest">
+      <label for="guest">Gost</label>
+      <br><br>
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">Prihvaćam uvjete korištenja</label>
+      <br><br>
+      <input type="submit" value="Pošalji">
+      <input type="reset" value="Poništi">
+    </form>
+</body>
+</html>
