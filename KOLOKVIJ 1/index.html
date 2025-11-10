@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Osobna web stranica">
+    <meta name="keywords" content="HTML, Kolokvij 1">
+    <meta name="author" content="Topolovac Tina">
+    <title>Moja web stranica</title>
+</head>
+<body>
+    <h1>Dobro došli na moju web stranicu.</h1>
+    <p>Ovo je <em>prvi paragraf</em> na mojoj web stranici.</p>
+    <p>Ovo je <strong>drugi paragraf.</strong></p>
+<hr>
+<ul>
+    <li>Web programiranje</li>
+    <li>Informatika u odgoju i obrazoanju</li>
+    <li>Uvod u računarstvo</li>
+    <li>Matematika 1</li>
+    <li>Engleski jezik 1</li>
+</ul>
+
+<ol type="1">
+    <li>Moraš proći sve kolegije sa 1. studijske godine</li>
+    <li>Moraš skupiti sve potpise</li>
+    <li>Možeš upisati višu godinu</li>
+</ol>
+<hr>
+<img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" alt="slika sveučilišta" height="400">
+<hr>
+<a href="https://www.unisb.hr/" target="_blank">Kliknite ovdje</a>
+<br>
+<a href="https://www.unisb.hr/wp-content/uploads/upisi/2025zim/Upisi_visa_godista_2025_26_Uciteljski-i-RPOO.pdf" target="_blank">UPIS VIŠE GODINE 2025/26</a>
+<br>
+<hr>
+<table border="">
+        <tr>
+            <th colspan="6"> Time Table</th>
+        </tr>
+            <td rowspan="6">Hours</td>
+            <td>Mon</td>
+            <td>Tue</td>
+            <td>Wed</td>
+            <td>Thu</td>
+            <td>Fri</td>
+        <tr>
+            <th colspan="2"> Maths</th>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Arts</td>
+        </tr>
+        <tr>
+            <th colspan="5"> LUNCH</th>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <th colspan="2"> Science</th>
+            <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>Maths</td>
+        </tr>
+</table>
+<hr>
+<h3>Forme u HTML-u</h3>
+<form action="#" method="post">
+        <label for="Korisničko ime">KORISNIČKO IME:</label>
+        <input type="text" id="Korisničko ime" placeholder="Korisničko ime">
+        <br>
+        <label for="pass">ŠIFRA:</label>
+        <input type="password" name="pass" id="pass" required>
+        <br>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <input type="radio" name="voće" id="admin">
+        <label for="admin">admin</label>
+        <input type="radio" name="guest" id="guest">
+        <label for="guest">guest</label>  
+        <input type="radio" name="voće" id="other">
+        <label for="other">other</label>
+        <br>
+        <input type="submit" value="Pošalji">
+        <br>
+        <input type="reset" value="Obriši">
+        <br>
+    </form>
+<hr>
+<audio controls >
+  <source src="./horse.ogv" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+<br>
+    <video width="400" height="300" controls>
+  <source src="./movie.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<hr>
+
+</body>
+</html>
