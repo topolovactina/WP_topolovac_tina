@@ -1,0 +1,58 @@
+/* Google Fonts */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FAFAFA;
+}
+
+/* Zadatak 2 - h1 i h2 */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem; /* Zadatak 5 */
+    font-weight: 600;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+/* Zadatak 3 - glavni sadržaj */
+ul, p {
+    background-color: #ECEFF1;
+}
+
+/* Paragrafi su već stilizirani inline, ali može stajati općenito */
+p {
+    margin-bottom: 15px;
+}
+
+/* Zadatak 5 - highlight klasa */
+.highlight {
+    color: #FFC107;
+}
+
+/* Zadatak 4 - lista */
+ul {
+    list-style-type: square;
+}
+
+ul li:nth-child(2) {
+    list-style-type: circle;
+}
+
+ul li:nth-child(3) {
+    list-style-type: disc;
+}
+
+ul li:nth-child(4) {
+    list-style-type: "★ ";
+}
+
+.hlapic-img {
+    width: 300px;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+}
