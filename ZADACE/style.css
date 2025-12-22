@@ -124,3 +124,113 @@ ul li:nth-child(4) {
     height: 40px;
     top: 70px;
 }
+
+/*
+
+/* Osnovne postavke */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header */
+#header {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Navigacija */
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.navigation a:hover {
+    background-color: #ff7043;
+}
+
+/* Kategorije */
+.category {
+    padding: 30px;
+}
+
+.category h2 {
+    border-bottom: 2px solid #ff7043;
+    padding-bottom: 10px;
+}
+
+/* Recepti */
+.recipe {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+}
+
+.recipe img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Grid */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.grid-item {
+    background-color: #ff7043;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Footer tekst */
+.footer-text {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Responzivnost */
+@media (max-width: 480px) {
+    .navigation ul {
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe img {
+        max-width: 100%;
+    }
+}
