@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>2. kolokvij</title>
+    <style>
+        .belgija {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .crna {
+            background-color: black;
+            flex: 1;
+        }
+
+        .zuta {
+            background-color: yellow;
+            flex: 1;
+        }
+
+        .crvena {
+            background-color: red;
+            flex: 1;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 100px);
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .grid div {
+            background-color: lightgray;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .box {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 10px;
+            background-color: #f2f2f2;
+        }
+
+        .klasa1 {
+            color: blue;
+            margin: 10px;
+        }
+
+        .klasa2 {
+            color: green;
+            padding: 10px;
+        }
+
+        .klasa3 {
+            color: purple;
+            font-style: italic;
+        }
+
+        #paragraf1 {
+            color: red;
+            background-color: #ffe5e5;
+            padding: 10px;
+        }
+
+        #paragraf2 {
+            color: orange;
+            font-weight: bold;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Zastava Belgije</h2>
+    <div class="belgija">
+        <div class="crna"></div>
+        <div class="zuta"></div>
+        <div class="crvena"></div>
+    </div>
+
+    <h2>CSS Grid</h2>
+    <div class="grid">
+        <div>Maja</div><div>Ana</div><div>Iva</div><div>Lucia</div>
+        <div>Petra</div><div>Ivana</div><div>Sofia</div><div>Mirna</div>
+        <div>Jana</div><div>Tena</div><div>Hana</div><div>Lana</div>
+        <div>Ema</div><div>Dajana</div><div>Karla</div><div>Mia</div>
+    </div>
+
+    <h2>Box model</h2>
+    <div class="box">Model 1</div>
+    <div class="box">Model 2</div>
+    <div class="box">Model 3</div>
+    <div class="box">Model 4</div>
+
+    <h2>Klase i ID</h2>
+    <p class="klasa1">Moja prva knjiga</p>
+    <p class="klasa2">Moje prvo putovannje</p>
+    <p class="klasa3">Moj hobi</p>
+    <p id="paragraf1">Moja obitelj</p>
+    <p id="paragraf2">Moj rođendan</p>
+
+    <script src="index.js"></script>
+</body>
+</html>
