@@ -1,115 +1,286 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Osobna web stranica">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Topolovac Tina">
-    <title>Moja web stranica</title>
+    <title>Topolovac Tina – Osobna web stranica</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #fff0f6;
+        }
+
+        .navbar {
+            background-color: #d63384;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #f783ac, #f06595);
+        }
+
+        .section-title {
+            color: #c2255c;
+        }
+
+        .card {
+            border: none;
+            border-radius: 20px;
+        }
+
+        .btn-primary {
+            background-color: #e64980;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #d63384;
+        }
+
+        .btn-outline-dark {
+            color: #c2255c;
+            border-color: #c2255c;
+        }
+
+        .btn-outline-dark:hover {
+            background-color: #c2255c;
+            color: white;
+        }
+
+        footer {
+            background-color: #a61e4d;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #f06595;
+        }
+
+        .progress-bar {
+            background-color: #f06595;
+        }
+    </style>
 </head>
 <body>
-    <h1>ZADAĆE</h1>
-    <UL>
-        <LI> <a href="./ZADACE/zadaca1.html" target="_blank">1.ZADAĆA</a></LI>
-        <LI> <a href="./ZADACE/zadaca2.html" target="_blank">2.ZADAĆA</a></LI>
-        <LI> <a href="./ZADACE/zadaca3.html" target="_blank">3.ZADAĆA</a></LI>
-        <LI> <a href="./ZADACE/zadaca4.html" target="_blank">4.ZADAĆA</a></LI>
-        <LI> <a href="./ZADACE/zadaca5.html" target="_blank">5.ZADAĆA</a></LI>
-        <LI> <a href="./ZADACE/zadaca6.html" target="_blank">6.ZADAĆA</a></LI>
-    </UL>
-    <h1>Naslov 1</h1> <a href="./KOLOKVIJ 1/index.html" target="_blank">KOl</a>
-    <h2>Naslov 2</h2> <a href="./KOLOKVIJ 2/index.html" target="_blank">Kol 2</a>
-    <h3>Naslov 3</h3>
-    <h4>Naslov 4</h4>
-    <h5>Naslov 5</h5>
-    <h6>Naslov 6</h6>
-    <p>PSI SU NAŠI <strong>vjerni prijatelji</strong> i pružaju nam bezuvjetnu ljubav. <br> 
-        Ali <mark>zauzvrat očekuju nježnost</mark>, 
-     pažnju i <del>, naravno,</del> maženje. <br> Engleski buldog imena 
-     <em> Pancake </em>postao je zvijezda 
-    interneta upravo <br>zato što je jasno dao do znanja što se događa kad 
-    se ta pravila prekrše. 
-    <br>Njegova reakcija nasmijala je <sub>milijune</sub> i 
-    <sup>ubrzo</sup> postala viralan hit.</p>
 
-    <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-         <br> Deserunt, error illum facilis dolores quam iste aut nesciunt,<br> 
-        omnis nostrum quidem, molestias ullam temporibus obcaecati 
-        <br>adipisci rerum autem asperiores iusto natus.</p>
-<h3>unordered Lista</h3>
-<ul>
-    <li>2 jaja</li>
-    <li>brašno</li>
-    <li>ulje</li>
-    <li>mlijko</li>
-    <li>sol</li>
-</ul>
-<h3>ordered lista</h3>
-<ol type="I">
-    <li>razbiti dva jaja</li>
-    <li>dodaj ulje i mlijeko</li>
-    <li>nakon mješanja postupno dodaj brašno i sol</li>
-</ol>
-<h3>definition lista</h3>
-<dl>
-    <dt>NAPON</dt>
-    <dd>razlika potencijala između dvije točke</dd>
-    <dt>STRUJA</dt>
-    <dd>usmjereno gibanje elektrona kroz vodič</dd>
-</dl>
-<H1>MAFINI</H1>
-<H2>SASTOJCI</H2>
-<H3>za 5 osoba</H3>
-<ul>
-    <li>250 Grama Branšna</li>
-    <li>1 Komad prasak za pecivo</li>
-    <li>200 Grama šećera kristala</li>
-    <li>1/2 Komad čokolada za kuhanje</li>
-    <li>2 Komad cijela jaja</li>
-    <li>100 Ml ulje</li>
-    <li>250 Ml Mleka</li>
-</ul>
-<h2>priprema</h2>
-<ol>
-    <li>Umešati brašno, kakao, prašak za pecivo i šećer. </li>
-    <li>Posebno umutiti jaja, mleko i ulje</li>
-    <li>Dodajte u smesu sa brašnom, kakaom, 
-        praškom za pecivo i šećerom i sve to zajedno umutiti. </li>
-</ol>
-<h2>posluživanje</h2>
-<ul>
-    <li>Kada mafini budu gotovi po vasoj želji dodati prelive preko mafina. </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="logo.jpg" alt="Logo" class="logo me-2">
+            Tina Topolovac
+        </a>
 
-<h3>linkovi</h3>
-<p>Web stranicu sveučilišta možete vidjeti <a href="https://www.unisb.hr/" target="_blank">OVDJE.</a>  </p>
-<!-- target blank otvara u novoj kartici --> 
- <p>otvori link <a href="./linkovi/kontakt.html" target="_blank">kontakt</a></p>
-<h3>dodavanje slike</h3>
-<p>slika sveučilišta s weba</p>
-<img src="https://www.unisb.hr/wp-content/uploads/design/logo_s_f.png" alt="slika sveučilišta">
-<p>slika iz našeg foldera</p>
-<img src="./slike/sveučilište.png" alt="slika sveučilišta" width="550px">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<h2>LISTA 5 WEBSAITS</h2>
-<ol type="I">
-    <LI> <a href="https://www.jutarnji.hr/" target="_blank">jutarnji</a></LI>
-    <li> <a href="https://www.vecernji.hr/" target="_blank">večernji</a></li>
-    <li> <a href="https://www.24sata.hr/" target="_blank">24 sata</a></li>
-    <li> <a href="https://www.index.hr/" target="_blank">index</a></li>
-    <li> <a href="https://novine.hr/" target="_blank">novine.hr</a> </li>
-</ol>
-<h1>MOJ ROĐENDAN!!!</h1>
-<h2>Slavim 23 rođendan!</h2>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdhN5ijGKkGnKWytJyGX9Kwu7_ZYe2L1qHmw&s" alt="slavljenicka torta">
-<h3>Dođi, veselim se tvom dolasku</h3>
-<ul><li>10.06.2026.</li>
-<li>u 18:00 sati</li></ul>
-<h3>na adresu</h3>
-<a href="https://maps.app.goo.gl/2Muyi7TkS5uApzBUA" target="_blank">Lokacija</a>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">O meni</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hobiji">Hobiji</a></li>
+                <li class="nav-item"><a class="nav-link" href="#zadace">Zadaće</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vjestine">Vještine</a></li>
+                <li class="nav-item"><a class="nav-link" href="#rad">Rad na predmetu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-<script src="index.js"></script>
+<header class="hero text-white text-center py-5 mt-5">
+    <div class="container">
+        <h1 class="display-4">Dobrodošli!</h1>
+        <p class="lead">Osobna web stranica – Web programiranje & Bootstrap</p>
+    </div>
+</header>
+
+<section id="about" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">O meni</h2>
+
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4">
+                <img src="logo.jpg" alt="Profil" class="profile-img shadow">
+            </div>
+
+            <div class="col-md-8">
+                <p>
+                    Zovem se <strong>Tina Topolovac</strong>, rođena sam 10. lipnja 2003. godine i živim u Oriovcu.
+                    Završila sam srednju školu za arhitektonskog tehničara u Tehničkoj školi Slavonski Brod.
+                    Trenutno sam studentica treće godine Učiteljskog fakulteta u Slavonskom Brodu.
+                    U sklopu kolegija <strong>Web programiranje</strong> izrađujem ovu osobnu web stranicu
+                    kao prikaz stečenog znanja i rada tijekom kolegija.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hobiji" class="py-5" style="background-color:#ffe0ec;">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">Hobiji</h2>
+
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="card shadow p-4">
+                    <h5>📚 Učenje</h5>
+                    <p>Zanimaju me nove tehnologije i kontinuirano usavršavanje.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow p-4">
+                    <h5>🎨 Kreativnost</h5>
+                    <p>Volim dizajn, uređivanje sadržaja i vizualno oblikovanje.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow p-4">
+                    <h5>🎶 Slobodno vrijeme</h5>
+                    <p>Uživam u glazbi, druženjima i opuštanju.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="zadace" class="py-5" style="background-color:#ffe3ec;">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">Zadaće</h2>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">1. zadaća</h5>
+                        <a href="./ZADACE/zadaca1.html" class="btn btn-primary">Otvori</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">2. zadaća</h5>
+                        <a href="./ZADACE/zadaca2.html" class="btn btn-primary">Otvori</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">3. zadaća</h5>
+                        <a href="./ZADACE/zadaca3.html" class="btn btn-primary">Otvori</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">4. zadaća</h5>
+                        <a href="./ZADACE/zadaca4.html" class="btn btn-primary">Otvori</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">5. zadaća</h5>
+                        <a href="./ZADACE/zadaca5.html" class="btn btn-primary">Otvori</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">6. zadaća</h5>
+                        <a href="./ZADACE/zadaca6/index.html" class="btn btn-primary">Otvori</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="vjestine" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">Vještine</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 80%">HTML</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 70%">CSS</div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 60%">Bootstrap</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="rad" class="py-5" style="background-color:#ffe3ec;">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">Rad na predmetu</h2>
+        <div class="text-center">
+            <a href="./KOLOKVIJ 1/index.html" class="btn btn-outline-dark m-2">Kolokvij 1</a>
+            <a href="./KOLOKVIJ 2/index.html" class="btn btn-outline-dark m-2">Kolokvij 2</a>
+        </div>
+    </div>
+</section>
+
+<section id="kontakt" class="py-5" style="background-color:#ffe0ec;">
+    <div class="container text-center">
+        <h2 class="section-title mb-4">Kontakt</h2>
+
+        <p class="mb-2">
+            📧 Email:
+            <a href="mailto:topolovactina@gmail.com" class="fw-bold text-decoration-none">
+                topolovactina@gmail.com
+            </a>
+        </p>
+
+       <p class="mb-0">
+    🌐 Moja web stranica:
+    <a href="https://topolovactina.github.io/WP_topolovac_tina/" 
+       target="_blank" 
+       class="fw-bold text-decoration-none">
+        topolovactina.github.io/WP_topolovac_tina
+    </a>
+</p>
+        </p>
+    </div>
+</section>
+
+<footer class="text-white text-center py-3">
+    <p class="mb-0">&copy; 2026. Topolovac Tina</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
